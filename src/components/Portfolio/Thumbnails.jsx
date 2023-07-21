@@ -6,13 +6,13 @@ const Thumbnails = ({ projectData, activeSlide, handleThumbnailClick }) => (
     {projectData.map((project, index) => (
       <WrapItem 
         m={'1'} 
-        borderRadius={'md'} // Change the borderRadius to 'md' for slightly rounded edges
+        borderRadius={'md'}
         borderWidth={3}
-        borderColor={'black'} // Change the borderColor to black
+        borderColor={'black'}
         boxShadow={'dark-lg'}
       > 
         <Image
-          boxSize={'100px'} // Change the boxSize to a specific value (e.g., '100px') for square-shaped thumbnails
+          boxSize={'100px'}
           key={index}
           src={project.image}
           onClick={() => handleThumbnailClick(index)}
