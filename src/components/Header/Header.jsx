@@ -1,5 +1,5 @@
 import React from 'react';
-import Navigation from '../Navigation.jsx';
+import Navigation from '../navigation.jsx';
 import { Box, Heading, Text, VStack } from '@chakra-ui/react';
 import GrayTri from './GrayTri.jpg';
 
