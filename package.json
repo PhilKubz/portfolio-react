@@ -6,7 +6,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "eslintConfig": {
     "extends": [
@@ -14,6 +16,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://PhilKubz.github.io/portfolio-react",
   "author": "",
   "license": "ISC",
   "dependencies": {
