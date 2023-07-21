@@ -11,11 +11,11 @@ const Footer = () => {
         <HStack spacing={4} justify="center" padding={2}>
           <Box fontSize='sm'>
           </Box>
-          <Link href='developer-github-url' isExternal >
+          <Link href='https://github.com/PhilKubz' isExternal >
             GitHub <ExternalLinkIcon mx='2px' />
           </Link>
           {'   '}|{'    '}
-          <Link href='developer-linkedin-url' isExternal >
+          <Link href='https://www.linkedin.com/in/philip-kubisz-a62314271/' isExternal >
             LinkedIn <ExternalLinkIcon mx='2px' />
           </Link>
           {'     '}|{'       '}

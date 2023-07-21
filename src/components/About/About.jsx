@@ -1,6 +1,6 @@
 import React from 'react'
 import { Heading, Image, Box, Container, HStack, VStack, Text } from '@chakra-ui/react'
-// include profile image
+import PKbiopicture from '../../assets/PKbiopicture.jpg'
 const About = () => {
   return (
     <>
@@ -9,10 +9,13 @@ const About = () => {
           <VStack >
             <Box boxSize='150px'>
               <Image
+                borderRadius={'3xl'}
+                src={PKbiopicture}
+                 alt='Phil'
               />
             </Box>
 
-            <Heading as="h1" size={'3xl'}  >
+            <Heading as="h1" size={'3xl'} style={{ paddingTop: '100px' }} >
               About Me
             </Heading>
             <Text textAlign={'center'} fontSize={'lg'} fontWeight={"bold"} p={5}>

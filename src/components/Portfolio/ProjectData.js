@@ -38,7 +38,7 @@ const projectData = [
 		description: 'A readme generator for creative and professional use'
 	},
 	{
-		title: 'BrainSync (the first version)',
+		title: 'BrainSync (version 1)',
 		image: BrainSync,
 		deployedUrl: '',
 		repoUrl: 'https://github.com/BrianMorse1/group-project-chat',
@@ -49,7 +49,7 @@ const projectData = [
 		image: regex,
 		deployedUrl: 'https://github.com/PhilKubz/challenge-17-regex/blob/main/gist-template.md',
 		repoUrl: 'https://github.com/PhilKubz/challenge-17-regex',
-		description: 'Explains a regex expression that checks for a valid IPv4 address'
+		description: 'Explains a regex expression that checks to validate and match an email address'
 	},
 	{
 		title: 'SVG Generator',
@@ -63,7 +63,7 @@ const projectData = [
 		image: passwordgen,
 		deployedUrl: 'https://philkubz.github.io/challenge-03-password-gen/',
 		repoUrl: 'https://github.com/PhilKubz/challenge-03-password-gen',
-		description: ''
+		description: 'A project that simplies password creation and allows users to select which type of characetrs/character length when prompted'
 	},
 
 

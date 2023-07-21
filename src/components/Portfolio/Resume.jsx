@@ -10,8 +10,8 @@ const Resume = () => {
             <Text mb={4}>Aspiring Full Stack Web Developer with a passion learning and development in team-based environments</Text>
 
             <Heading size="md" mb={2}>Education:</Heading>
-            <Text mb={4}>Web Development FullStack Bootcamp, edX, Jan 2023 - Jul 2023...</Text>
-            <Text mb={4}>Bachelor's degree in French Language and Literature, Wabash College, August 2010 - May 2014...</Text>
+            <Text mb={4}>Web Development FullStack Bootcamp, edX, Jan 2023 - July 2023</Text>
+            <Text mb={4}>Bachelor's degree in French Language and Literature, Wabash College, August 2010 - May 2014</Text>
 
             <Heading size="md" mb={2}>Technical Skills:</Heading>
             <SimpleGrid columns={2} spacing={2} mb={4}>
