@@ -20,36 +20,37 @@ const Project = ({ title, image, deployedUrl, repoUrl, description }) => {
 			variant='filled'
 			borderRadius='lg'
 			borderWidth={3}
-      borderColor={'#ff927f'}
+            borderColor={'black'}
+            padding='5'
       >
-				<Flex direction={isSmallerThan426 ? 'column' : 'row'} >
-					<Image boxSize={isSmallerThan426 ? '345px' : '200px'} 
-					objectFit='fit' 
-					src={image}
-					alt={title}
-						/>
-					<CardBody>
-						<Heading size='md' noOfLines={1}>{title}</Heading>
-						<Collapse startingHeight={100} in={show}>
-							<Text>{description}</Text>
-						</Collapse>
-						<HStack spacing={4} >
-							<Button size='sm' onClick={handleToggle} mt='1rem'>
-								Show {show ? 'Less' : 'More'}
+			<Flex direction={isSmallerThan426 ? 'column' : 'row'} >
+				<Image boxSize={isSmallerThan426 ? '345px' : '200px'} 
+				    objectFit='fit' 
+				    src={image}
+				    alt={title}
+				/>
+				<CardBody>
+					<Heading size='md' noOfLines={1}>{title}</Heading>
+					<Collapse startingHeight={100} in={show}>
+						<Text>{description}</Text>
+					</Collapse>
+					<HStack spacing={4} >
+						<Button size='sm' onClick={handleToggle} mt='1rem'>
+							Show {show ? 'Less' : 'More'}
+						</Button>
+						<Button as='a' size='sm' mt='1rem' href={repoUrl} isExternal>
+							Repo <ExternalLinkIcon mx='1px' />
+						</Button>
+						{deployedUrl
+							? <Button as='a' size='sm' mt='1rem' href={deployedUrl} isExternal>
+								Deployed <ExternalLinkIcon mx='1px' />
 							</Button>
-							<Button as='a' size='sm' mt='1rem' href={repoUrl} isExternal>
-								Repo <ExternalLinkIcon mx='2px' />
-							</Button>
-							{deployedUrl
-								? <Button as='a' size='sm' mt='1rem' href={deployedUrl} isExternal>
-									Deployed <ExternalLinkIcon mx='2px' />
-								</Button>
-								: <span> </span>
-		 					}
-						</HStack>
-					</CardBody>
-				</Flex>
-		</Card >
+							: <span> </span>
+		 				}
+					</HStack>
+				</CardBody>
+			</Flex>
+	</Card >
 	)
 }
 

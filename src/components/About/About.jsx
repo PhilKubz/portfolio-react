@@ -30,7 +30,7 @@ const About = () => {
           </Text>
 
           <Text fontSize={'md'}  p={2}>
-            After decades of being aorund computers for leisure and hobby, I have decided to turn my interests towards a career path.
+            After decades of being arund computers for leisure and hobby, I have decided to turn my interests towards a career path.
           </Text>
           <Text fontSize={'md'}  p={2}>
             I have always enjoyed taking on difficult tasks and working with others. In this sense, the field offers a lot of personal enjoyment and opportunities ot add vlaue to others around me.

@@ -1,5 +1,5 @@
-import React, { useState, useRef } from 'react'
-import { Heading, Box, Container } from '@chakra-ui/react';
+import React, { useState, useRef } from 'react';
+import { Heading, Box, Container, Center } from '@chakra-ui/react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -9,7 +9,6 @@ import LeftArrow from './LeftArrow';
 import Thumbnails from './Thumbnails';
 import Project from './Project';
 import projectData from './ProjectData';
-
 
 const Portfolio = () => {
   console.log('Portfolio is rendering');
@@ -31,24 +30,24 @@ const Portfolio = () => {
   };
 
   return (
-    <Box>
-      <Box >
-        <Heading >Projects that I have worked on</Heading>
-      </Box>
-      <Container mt={1} >
-			<Slider ref={sliderRef} {...settings} >
-					{projectData.map((project, index) => {
-							return <Project key={index} {...project} />
-					})}
-			</Slider>
+    <Box paddingBottom="20px">
+      <Center>
+        <Heading paddingBottom="10px">Projects</Heading>
+      </Center>
+      <Container mt={1}>
+        <Slider ref={sliderRef} {...settings}>
+          {projectData.map((project, index) => {
+            return <Project key={index} {...project} />;
+          })}
+        </Slider>
       </Container>
       <Thumbnails
         projectData={projectData}
         activeSlide={activeSlide}
         handleThumbnailClick={handleThumbnailClick}
       />
-  </Box>
-  )
-}
+    </Box>
+  );
+};
 
 export default Portfolio;
