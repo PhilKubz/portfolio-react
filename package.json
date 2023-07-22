@@ -16,7 +16,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://PhilKubz.github.io/portfolio-react",
+  "homepage": "https://philkubz.github.io/portfolio-react",
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -32,7 +32,7 @@
     "slick-carousel": "^1.8.1"
   },
   "engines": {
-    "node": "14.x",
+    "node": "18.x",
     "npm": "6.x"
   },
   "browserslist": {
