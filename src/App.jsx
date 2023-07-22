@@ -1,18 +1,16 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { ChakraProvider, Container, VStack, Box } from '@chakra-ui/react';
 
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import About from './components/About/About'
-import Portfolio from './components/Portfolio/Portfolio'
-import Resume from './components/Portfolio/Resume'
-import blackgraybg from './assets/blackgraybg.jpg'
-import TealBluebg from './assets/TealBluebg.jpg'
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+import About from './components/About/About';
+import Portfolio from './components/Portfolio/Portfolio';
+import Resume from './components/Portfolio/Resume';
+import blackgraybg from './assets/blackgraybg.jpg';
+import TealBluebg from './assets/TealBluebg.jpg';
 
 import theme from './theme';
-
-
 
 function App() {
   return (
@@ -26,7 +24,8 @@ function App() {
         >
           <VStack
             minH="100vh"
-            spacing={4}>
+            spacing={4}
+          >
             <Header />
             <Container
               boxShadow='2xl'
@@ -38,7 +37,7 @@ function App() {
               bgSize="cover"
               maxW='container.md'
             >
-              <Routes >
+              <Routes>
                 <Route path="/about" element={<About />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/resume" element={<Resume />} />
@@ -49,7 +48,7 @@ function App() {
           </VStack>
         </Box>
       </Router>
-    </ChakraProvider >
+    </ChakraProvider>
   );
 }
 
