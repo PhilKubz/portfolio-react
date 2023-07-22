@@ -16,7 +16,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://philkubz.github.io/portfolio-react",
+  "homepage": "/",
   "author": "",
   "license": "ISC",
   "dependencies": {
