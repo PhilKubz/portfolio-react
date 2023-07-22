@@ -16,7 +16,7 @@ const Navigation = () => {
         display="flex"
         justifyContent="center"
       >
-        <BreadcrumbLink as={Link} to="/">
+        <BreadcrumbLink as={Link} to="/about">
           About Me
         </BreadcrumbLink>
       </Box>
