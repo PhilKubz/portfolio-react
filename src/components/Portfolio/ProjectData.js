@@ -12,7 +12,7 @@ const projectData = [
 	{
 		title: 'Brainsync',
 		image: Brain,
-		deployedUrl: 'https://bestgroup-brainsync-52f09c273629.herokuapp.com/',
+		deployedUrl: '',
 		repoUrl: 'https://github.com/NoahJRalph/project-3-bestgroup',
 		description: 'A social media experimental app that allows users to communicate via posts - responsive with screensize and allows new user creation/full functionality'
 	},
